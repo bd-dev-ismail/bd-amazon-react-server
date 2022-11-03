@@ -17,7 +17,10 @@ const client = new MongoClient(uri, {
   serverApi: ServerApiVersion.v1,
 });
 
-
+async function run() {
+  
+}
+run().catch(error=> console.log(error));
 
 app.get('/', (req, res)=>{
     res.send('BD Amazon Server is Running');
